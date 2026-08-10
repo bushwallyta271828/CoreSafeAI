@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>CoRe Safe AI @CMU</title>
+        <script src='https://www.recaptcha.net/recaptcha/api.js'></script>
+
+
+    </head>
+    <body>
+        <div>
+<b>     CoRe Safe AI@CMU:&nbsp;&nbsp;
+                <a href="index.html"><i>Home</i></a> &nbsp;&nbsp;
+                <a href="publications.html">Publications</a> &nbsp;&nbsp;
+                <a href="people.html">People</a> &nbsp;&nbsp;
+                <a href="join.html">Work with us</a> &nbsp;&nbsp;
+</b>
+        </div>
+        <hr>
+
+          <html>
+ <body>
+   Welcome to the center for Conceptual Research on Safe AI (CoRe Safe AI) at CMU.<br><br>
+
+   Early work on AI safety was either concerned with the safe
+   deployment of AI of the time -- say, keeping early self-driving
+   cars from crashing -- or theoretical in nature, trying to
+   anticipate systems that did not yet exist, based on abstract
+   concepts such as agents, the pursuit of power to achieve
+   objectives, and intelligence explosions.<br><br>
+
+   Now that we have highly capable broad AI systems, concepts such as
+   "AI alignment" have taken very concrete instantiations, such as the
+   fine-tuning of LLMs-as-chatbots.  This has allowed for concrete
+   experimental work on such topics to take place, which is an
+   important advance for the field and one that should also inform
+   theoretical work.  Still, focusing entirely on today's systems,
+   advanced as they may already be, risks taking our attention away
+   from challenges to arrive in the future.<br><br>
+
+   The center pursues modern ways to think conceptually about AI
+   safety, informed by the latest advances but with an eye towards the
+   future, aiming to identify important aspects that are not yet
+   visible today but that we should expect in the (possibly near)
+   future.<br><br>
+   
+   More detail to follow.
+
+   
+ </body>
+</html>
+
+    </body>
+</html>
+
