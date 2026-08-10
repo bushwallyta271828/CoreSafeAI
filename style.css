@@ -1,0 +1,234 @@
+/* Shared stylesheet for CoRe Safe AI @ CMU */
+
+:root {
+  --bg: #faf9f7;
+  --text: #26231f;
+  --secondary: #57524b;
+  --muted: #8a8378;
+  --soft: #6b665f;
+  --rule: #e4dfd7;
+  --accent: #97182f;
+  --accent-dark: #6e1023;
+  --serif: 'Source Serif 4', Georgia, serif;
+  --sans: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Header / navigation */
+header {
+  border-bottom: 1px solid var(--rule);
+}
+
+header .container {
+  padding-top: 26px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 19px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-title span {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+  font-family: var(--sans);
+  font-size: 14.5px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+nav a {
+  color: var(--secondary);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+nav a.current {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Content */
+main {
+  padding-top: 56px;
+  padding-bottom: 80px;
+}
+
+h1 {
+  margin: 0 0 40px;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h1.has-subtitle {
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  margin: 0 0 40px;
+  font-family: var(--sans);
+  font-size: 15px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.prose {
+  font-size: 18px;
+  line-height: 1.65;
+  max-width: 640px;
+}
+
+.prose p {
+  margin: 0 0 22px;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.aside {
+  font-style: italic;
+  color: var(--soft);
+}
+
+/* Publications */
+.pub-list {
+  max-width: 640px;
+}
+
+.pub {
+  margin-bottom: 28px;
+}
+
+.pub p {
+  margin: 0 0 4px;
+}
+
+.pub .title {
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.pub .title a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.pub .title a:hover {
+  color: var(--accent);
+}
+
+.pub .authors {
+  font-size: 15.5px;
+  color: var(--secondary);
+}
+
+.pub .meta {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+/* People */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 32px 28px;
+  max-width: 640px;
+}
+
+.person img,
+.person .photo-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.person .photo-placeholder {
+  background: repeating-linear-gradient(45deg, #eee9e1, #eee9e1 6px, var(--rule) 6px, var(--rule) 12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.person .name {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.person .role {
+  margin: 2px 0 0;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--rule);
+}
+
+footer .container {
+  padding-top: 20px;
+  padding-bottom: 28px;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
