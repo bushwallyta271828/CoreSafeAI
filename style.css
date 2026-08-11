@@ -176,6 +176,58 @@ h1.has-subtitle {
   color: var(--muted);
 }
 
+/* Events */
+.event-list {
+  max-width: 640px;
+}
+
+.event-list h2 {
+  margin: 40px 0 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.event-list h2:first-child {
+  margin-top: 0;
+}
+
+.event {
+  margin-bottom: 28px;
+}
+
+.event p {
+  margin: 0 0 4px;
+}
+
+.event .date {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.event .title {
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.event .title a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.event .title a:hover {
+  color: var(--accent);
+}
+
+.event .meta {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
 /* People */
 .people-grid {
   display: grid;
