@@ -231,8 +231,8 @@ h1.has-subtitle {
 /* People */
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 32px 28px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px 32px;
   max-width: 640px;
 }
 
@@ -259,6 +259,7 @@ h1.has-subtitle {
   margin: 0;
   font-size: 17px;
   font-weight: 600;
+  line-height: 1.35;
 }
 
 .person .role {
@@ -266,6 +267,14 @@ h1.has-subtitle {
   font-family: var(--sans);
   font-size: 13.5px;
   color: var(--muted);
+}
+
+.person .description {
+  margin: 10px 0 0;
+  max-width: 280px;
+  font-size: 15.5px;
+  line-height: 1.5;
+  color: var(--secondary);
 }
 
 /* Footer */
