@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -69,7 +73,9 @@ header .container {
 
 nav {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 10px 24px;
   font-family: var(--sans);
   font-size: 14.5px;
   font-weight: 500;
@@ -90,6 +96,17 @@ nav a:hover {
 nav a.current {
   color: var(--accent);
   border-bottom-color: var(--accent);
+}
+
+@media (max-width: 680px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    column-gap: 16px;
+  }
 }
 
 /* Content */
